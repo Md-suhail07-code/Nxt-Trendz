@@ -1,0 +1,117 @@
+/* Write your CSS here */
+
+/* --- Base Styles (Large Screens) --- */
+
+.cart-summary-cont {
+  /* Enhanced: Added padding and border-radius for a card-like look */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-self: flex-end; /* Ensures it stays on the right side of its parent */
+  margin-bottom: 24px;
+  width: 500px;
+  max-width: 100%;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #f4f4f4; /* Light background for contrast */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.summ-head {
+  display: flex;
+  /* Enhanced: Space between total price and item count */
+  justify-content: space-between; 
+  align-items: flex-end; /* Align the price and label nicely */
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e5e7eb; /* Separator line */
+}
+
+.order-head {
+  color: #616e7c;
+  font-size: 24px; /* Slightly adjusted for better visual flow */
+  font-weight: 500;
+  margin-right: 8px; /* Space between "Order Total" and Price */
+}
+
+.price-head {
+  color: #171f46; /* Strong color for the final price */
+  font-size: 36px;
+  font-weight: 700;
+  display: inline;
+}
+
+.cart-length-para {
+  color: #616e7c;
+  font-size: 18px; /* Slightly smaller than price header for distinction */
+  font-weight: 500;
+  margin-top: 10px; /* Space above the paragraph */
+}
+
+.check-btn {
+  /* Enhanced: Hover effect and consistent capitalization */
+  background-color: #0b69ff;
+  padding: 16px 20px;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  border: none;
+  width: 100%; /* Make button full width of the container */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+
+.check-btn:hover {
+  background-color: #0059cc; /* Darker blue on hover */
+}
+
+/* --- Media Query for Small Screens (max-width: 767px) --- */
+
+@media screen and (max-width: 767px) {
+  .cart-summary-cont {
+    width: 95%; /* Better fit on mobile */
+    align-self: center;
+    padding: 15px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    box-shadow: none; /* Remove shadow on mobile for a cleaner look */
+    background-color: transparent; /* Transparent background on mobile */
+  }
+
+  .summ-head {
+    justify-content: space-between; /* Ensures total and price separate */
+    align-items: center;
+    padding-bottom: 8px;
+  }
+
+  .order-head {
+    font-size: 18px;
+    margin-right: 5px;
+  }
+
+  .price-head {
+    font-size: 28px;
+  }
+
+  .cart-length-para {
+    font-size: 15px;
+  }
+
+  .check-btn {
+    width: 100%;
+    padding: 14px;
+  }
+}
+
+/* --- Media Query for Medium Screens (768px to 991px) --- */
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .cart-summary-cont {
+    max-width: 400px; /* Slightly smaller maximum width for tablet view */
+    width: 90%;
+    padding: 18px;
+  }
+}
