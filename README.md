@@ -2,7 +2,7 @@
 
 A modern **E-Commerce storefront** built with **React**, demonstrating real-world features such as authentication, protected routes, product listing with filters, product details, and cart management.
 
-🔗 **Live Demo:** Add your deployed Render link here  
+🔗 **Live Demo:** https://nxt-trendz-zk08.onrender.com
 📂 **Source Code:** `./src`
 
 ---
